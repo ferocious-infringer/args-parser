@@ -1,0 +1,41 @@
+# -------------------------------------------------- #
+# forms of options                                   #
+# -------------------------------------------------- #
+
+1 letter
+2+ letters
+
+# -------------------------------------------------- #
+# types of options                                   #
+# -------------------------------------------------- #
+
+switches: don't accept parameters
+
+arguments: accept parameters
+
+	minimal: the minimal amount of parameters that must be provided.
+
+	maximum
+
+		limited: the maximum amount of parameters that can be provided.
+
+		unlimited: can consume as many parameters as possible.
+
+# -------------------------------------------------- #
+# combinations                                       #
+# -------------------------------------------------- #
+
+only options with 1 letter can be combined.
+
+valid: switches+switches, switches+arguments
+invalid: arguments+switches, arguments+arguments
+
+# -------------------------------------------------- #
+# prefixes & strength                                #
+# -------------------------------------------------- #
+
+without prefixes
+	weak: cannot escape feeding parameters
+
+with prefixes
+	strong: can escape feeding parameters

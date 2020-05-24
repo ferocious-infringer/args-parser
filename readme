@@ -1,0 +1,6 @@
+# -------------------------------------------------- #
+# Command-line arguments parser                      #
+# args-parser                                        #
+# -------------------------------------------------- #
+
+Parse parameters passed to program from command-line.
